@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Django Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    </head>
+    <body>
+        <h1>This is Time app</h1>
+        <h2>Current Date:{{insert_date}}</h2>
+        <h2>Message:{{insert_msg}}</h2>
+        <img src="{% static 'images/my_pic.jpg' %}" alt="">
+        {% comment %} <h2>Name:{{name}}</h2>
+        <h2>Age:{{age}}</h2>
+        <br></br>
+        <br></br> {% endcomment %}
+        <script src="" async defer></script>
+    </body>
+</html>
