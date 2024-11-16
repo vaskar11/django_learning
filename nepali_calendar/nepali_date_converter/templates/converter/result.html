@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converted Date</title>
+</head>
+<body>
+    <h1>Converted Nepali Date</h1>
+    <p><strong>Nepali Date:</strong> {{ nepali_date }}</p>
+    <p><strong>Weekday:</strong> {{ weekday }}</p>
+    <p><strong>Tithi:</strong> {{ tithi }}</p>
+    <p><strong>Special Event:</strong> {{ event }}</p>
+    <pre>{{ calendar }}</pre>
+    <a href="{% url 'index' %}">Convert another date</a>
+</body>
+</html>

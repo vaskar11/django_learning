@@ -16,8 +16,8 @@ def formIndex(request):
     if request.method== "POST":
         form= forms.EmployeeForm(request.POST)
         if form.is_valid():
-            # print('form is valid')
-            # print('Name: ', form.cleaned_data['ename'])
-            Employee.objects.create(ename= form.cleaned_data['ename'],eaddr= form.cleaned_data['eaddr'],enum= form.cleaned_data['enum'],esal= form.cleaned_data['esal'])
+            form.save(commit=True)
+
+        form = forms.EmployeeForm()
     context={'form':form}
     return render(request, 'firstapp/employee.html',context=context)
